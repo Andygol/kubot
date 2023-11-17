@@ -2,9 +2,9 @@
 
 Практичне завдання зі створення застосунків з чистого аркуша для засвоєння практик DevOps.
 
-- `go mod init github.com/Andygol/kubot` – ініціалізація проєкту 
-- `go install github.com/spf13/cobra-cli@latest` – встановленя Cobra CLI, бібліотеки з інструментами для швидкого створення застосунків
-- `cobra-cli init` – ініціалізаця бібліотеки
+- `go mod init github.com/Andygol/kubot` – ініціалізація проєкту
+- `go install github.com/spf13/cobra-cli@latest` – встановлення Cobra CLI, бібліотеки з інструментами для швидкого створення застосунків
+- `cobra-cli init` – ініціалізація бібліотеки
 - `cobra-cli add version` – додавання команди `version`
 - `go run main.go help` – запуск з параметром `help`
 
@@ -38,7 +38,7 @@ version called
 ```
 
 - `cobra-cli add kubot` – додавання параметра `kubot`
-- `go build -ldflags "-X="github.com/Andygol/kubot/cmd.appVersion=v1.0.0` – збірка із зазначеням номера версії
+- `go build -ldflags "-X="github.com/Andygol/kubot/cmd.appVersion=v1.0.0` – збірка із зазначенням номера версії
 - `./kubot version` – перевірка версії
 
 ```
@@ -52,7 +52,8 @@ v1.0.0
 ./kubot start
 kubot v1.0.1 started2023/11/09 11:59:39 Please check TELE_TOKEN env variable. telegram: Not Found (404)
 ```
-- `read -s TELE_TOKEN` – додавання токену для достпу к API Telegram, після натискання вводу вставити код токену з буферу обміну <kbd>cmd</kbd>+<kbd>V</kbd>
+
+- `read -s TELE_TOKEN` – додавання токена для доступу до API Telegram, після натискання вводу вставити код токена з буфера обміну <kbd>cmd</kbd>+<kbd>V</kbd>
 
 - `echo $TELE_TOKEN` – перевірка значення системної змінної TELE_TOKEN
 - `export TELE_TOKEN` – використання системної змінної
@@ -73,4 +74,5 @@ kubot v1.0.2 started2023/11/09 12:41:53 hello/start hello
 ```
 
 ## Посилання на бота
+
 [t.me/kubot621_bot](t.me/kubot621_bot)
