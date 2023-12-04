@@ -12,9 +12,9 @@ image:
   arch: amd64
 
 secret:
-  name: "kubot"
-  tokenKey: "TELE_TOKEN"
-  tokenName: "kubot-token"
+  name: "TELE_TOKEN"
+  tokenKey: "token"
+  tokenName: "kubot"
   
 imagePullSecrets: []
 nameOverride: ""
