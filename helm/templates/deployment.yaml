@@ -37,7 +37,7 @@ spec:
           image: " {{ .Values.image.repository }}/{{ .Chart.Name }}:{{ .Values.image.tag }}"
           env:
             - name: {{ .Values.secret.name }}
-              valueFROM:
+              valueFrom:
                 secretKeyRef:
                   key: {{ .Values.secret.tokenKey }}
                   name: {{ .Values.secret.tokenName }}
