@@ -8,7 +8,7 @@ image:
   repository: "andygol/kubot"
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.0.4-9da312d"
+  tag: "v1.0.4-e5bd50e"
   arch: amd64
   os: linux
 secret:
