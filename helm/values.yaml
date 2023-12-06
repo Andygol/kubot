@@ -7,8 +7,9 @@ image:
   repository: ghcr.io/andygol
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.0.4-df0e5e5-linux-amd64"
+  tag: "v1.0.4-c06847b"
   arch: amd64
+  os: linux
 secret:
   name: "TELE_TOKEN"
   tokenKey: "token"
