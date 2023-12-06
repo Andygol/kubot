@@ -8,7 +8,7 @@ image:
   repository: "andygol/kubot"
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.0.4-c06847b"
+  tag: "v1.0.4-9da312d"
   arch: amd64
   os: linux
 secret:
@@ -88,7 +88,7 @@ volumes:
 #     optional: false
 
 # Additional volumeMounts on the output Deployment definition.
-volumeMounts: 
+volumeMounts:
   - name: dev-mem
     mountPath: "/dev/mem"
 #   readOnly: true
