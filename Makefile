@@ -1,8 +1,7 @@
 .DEFAULT_GOAL := help
 SHELL := /bin/bash
 
-REPO_URL = $(shell git remote get-url origin)
-APP = $(shell if [ -z "$(findstring .git,$(REPO_URL))" ]; then echo $(REPO_URL); else basename $(REPO_URL) .git; fi)
+APP = $(shell basename $(shell git remote get-url origin) .git)
 
 VERSION = $(shell git describe --tags --abbrev=0)-$(shell git rev-parse --short HEAD)
 BUILD_DIR = out
