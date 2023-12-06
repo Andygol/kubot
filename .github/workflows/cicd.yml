@@ -25,6 +25,8 @@ jobs:
         password: ${{secrets.GITHUB_TOKEN}}
 
     - name: Build & Push
+      env:
+        APP: "kubot"
       run: make image push
 
     - name: Clean
