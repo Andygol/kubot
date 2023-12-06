@@ -23,3 +23,9 @@ jobs:
         registry: ghcr.io
         username: ${{github.actor}}
         password: ${{secrets.GITHUB_TOKEN}}
+
+    - name: Build & Push
+      run: make image push
+
+    - name: Clean
+      run: make clean-all
