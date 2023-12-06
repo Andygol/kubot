@@ -7,6 +7,9 @@ jobs:
     name: CI
     runs-on: ubuntu-latest
 
+    permissions:
+      packages: write
+
     steps:
 
     - name: Checkout
@@ -25,8 +28,6 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Build & Push
-      env:
-        APP: "kubot"
       run: make image push
 
     - name: Clean
