@@ -49,7 +49,7 @@ pipeline {
 
         stage('push image') {
             steps {
-                sh "make -n ${params.OS} ${params.ARCH} image push"
+                sh "make ${params.OS} ${params.ARCH} image push"
             }
         } 
     }
